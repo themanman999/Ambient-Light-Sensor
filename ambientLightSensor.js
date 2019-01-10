@@ -11,8 +11,10 @@ if (window.AmbientLightSensor){
           // < 50 is dark room
           if (sensor.illuminance < 50) {
             document.body.className = 'darkLight';
+            details.innerHTML += '<br>darkLight';
           } else {
             document.body.className = 'brightLight';
+            details.innerHTML += '<br>brightLight';
           }
       }
 
